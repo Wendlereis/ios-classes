@@ -12,6 +12,8 @@ class AnimalTableViewController: UITableViewController {
 
     var animal = ["Ornitorrinco", "Tamandua"]
     var pais = ["Australia", "Brasil"]
+    var imagemAnimal = [#imageLiteral(resourceName: "unc"), #imageLiteral(resourceName: "hor")]
+    var currentIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +49,8 @@ class AnimalTableViewController: UITableViewController {
         // Configure the cell...
         cell.textLabel?.text = animal[indexPath.row]
         cell.detailTextLabel?.text = pais[indexPath.row]
-
+        cell.imageView?.image = imagemAnimal[indexPath.row]
+        
         return cell
     }
     
@@ -75,7 +78,8 @@ class AnimalTableViewController: UITableViewController {
     }
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Clicou em animal")
+        currentIndex = indexPath.row
+        performSegue(withIdentifier: "AnimalParaDetalhe", sender: nil)
     }
     
     /*
@@ -93,14 +97,19 @@ class AnimalTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let viewController = segue.destination as! DetalheViewController
+        viewController.nomeAnimal = animal[currentIndex]
+        viewController.paisAnimal = pais[currentIndex]
+        viewController.imagem = imagemAnimal[currentIndex]
+        
     }
-    */
+ 
 
 }

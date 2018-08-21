@@ -13,6 +13,7 @@
 		ACE59A93212B93CA00FF7046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE59A92212B93CA00FF7046 /* Assets.xcassets */; };
 		ACE59A96212B93CA00FF7046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE59A94212B93CA00FF7046 /* LaunchScreen.storyboard */; };
 		ACE59A9E212B942E00FF7046 /* AnimalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE59A9D212B942E00FF7046 /* AnimalTableViewController.swift */; };
+		ACE59ABE212B9FD300FF7046 /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE59ABD212B9FD300FF7046 /* DetalheViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ACE59A95212B93CA00FF7046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACE59A97212B93CA00FF7046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACE59A9D212B942E00FF7046 /* AnimalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewController.swift; sourceTree = "<group>"; };
+		ACE59ABD212B9FD300FF7046 /* DetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		ACE59A7F212B93C200FF7046 = {
 			isa = PBXGroup;
 			children = (
+				ACE59ABD212B9FD300FF7046 /* DetalheViewController.swift */,
 				ACE59A8A212B93C200FF7046 /* Table2 */,
 				ACE59A89212B93C200FF7046 /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE59ABE212B9FD300FF7046 /* DetalheViewController.swift in Sources */,
 				ACE59A9E212B942E00FF7046 /* AnimalTableViewController.swift in Sources */,
 				ACE59A8E212B93C300FF7046 /* ViewController.swift in Sources */,
 				ACE59A8C212B93C200FF7046 /* AppDelegate.swift in Sources */,
